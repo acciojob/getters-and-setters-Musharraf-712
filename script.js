@@ -1,24 +1,21 @@
 //complete this code
 class Person {
 	constructor(name,age){
-		this.name = name,
-	this.age = age
+		this._name = name,
+	this._age = age
 	}
 	get name(){
-	return this.name
+	return this._name
 }
 get age(){
-	return this.age
+	return this._age
 }
 set age(newAge){
 	this.age = newAge
 }
 }
 
-const person = new Person("John", 25)
-console.log(person.name);
-person.age =30;
-console.log(person.age);
+
 
 class Student extends Person {
 	constructor(name,age){
@@ -35,7 +32,7 @@ class Teacher extends Person {
 constructor(name,age){
 super(name,age)
 }
-	teach(){console.log(`${this.name}` is teaching)}
+	teach(){console.log(`${this.name} is teaching`)}
 }
 const teacher = new Teacher("Jon",30);
 teacher.teach()
