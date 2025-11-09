@@ -11,11 +11,14 @@ get age(){
 	return this._age
 }
 set age(newAge){
-	this.age = newAge
+	this._age = newAge
 }
 }
 
-
+// const person = new Person("John", 25)
+// console.log(person.name);
+// person.age =30;
+// console.log(person.age);
 
 class Student extends Person {
 	constructor(name,age){
