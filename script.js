@@ -15,7 +15,7 @@ set age(newAge){
 }
 }
 
-const person = new Person("Abhiskek", 23)
+const person = new Person("John", 25)
 console.log(person.name);
 person.age =30;
 console.log(person.age);
@@ -28,7 +28,7 @@ class Student extends Person {
 	study(){console.log(`${this.name} is studying`);
 		   }
 }
-const student = new Student("Musharraf",23)
+const student = new Student("John",30)
 student.study()
 
 class Teacher extends Person {
@@ -37,7 +37,7 @@ super(name,age)
 }
 	teach(){console.log(`${this.name}` is teaching)}
 }
-const teacher = new Teacher("Bob",40);
+const teacher = new Teacher("Jon",30);
 teacher.teach()
 
 // Do not change the code below this line
